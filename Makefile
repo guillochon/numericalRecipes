@@ -1,7 +1,9 @@
 #Makefile for NR
 
-flashUtilities += nr.o nrutil.o nrtype.o newt.o annewt.o fmin.o fdjac.o eosjac.o \
+flashUtilities += nr.o nrutil.o nrtype.o newt.o fmin.o fdjac.o \
                   ludcmp.o lubksb.o lnsrch.o zbrac.o zbrent.o newt_wrappers.o
+#flashUtilities += nr.o nrutil.o nrtype.o newt.o annewt.o fmin.o fdjac.o eosjac.o \
+#                  ludcmp.o lubksb.o lnsrch.o zbrac.o zbrent.o newt_wrappers.o
 
 nr.o : nrtype.o
 nrutil.o : nrtype.o
