@@ -1,6 +1,6 @@
 SUBROUTINE eosjac(funcv,x,df,fmin,fvec)
     USE nrtype; USE nrutil, ONLY : assert_eq, nrerror
-    USE Eos_data, ONLY: nr_eos_deriv
+    USE eos_helmData, ONLY: nr_eos_deriv
     IMPLICIT NONE
     REAL(SP), DIMENSION(:), INTENT(IN) :: x
     REAL(SP), DIMENSION(:,:), INTENT(OUT) :: df
